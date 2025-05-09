@@ -4,11 +4,15 @@ name: Run test
 on:
 
   push:
-    branches: [ main ]
+    branches:
+      - main
+      - set_up_yml
 
 
   pull_request:
-    branches: [ main ]
+    branches:
+      - main
+      - set_up_yml
 
 jobs:
   build:
